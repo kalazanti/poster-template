@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+@page {
+    width: 100mm;
+    height: 150mm;
+    size: 100mm 150mm; /* width and height */
+    margin: 0mm; /* this is the space outside the content */
+  }
+
+div.break {
+    page-break-after: always;
+    height:0;
+    width: 0;
+}
+
+body {
+    width: 100%;
+    /* height: 150mm; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', monospace;
+    font-size: .75em;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:nth-child(1) td,
+tr:nth-child(4) td {
+    height: 63mm;
+}
+
+td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
